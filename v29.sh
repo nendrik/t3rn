@@ -38,7 +38,7 @@ export LOG_PRETTY=false
 read -p "Executor Process Order (input true atau false): " KEY_TRUE_FALSE
 export EXECUTOR_PROCESS_ORDERS=$KEY_TRUE_FALSE
 export EXECUTOR_PROCESS_CLAIMS=true
-#export EXECUTOR_MAX_L3_GAS_PRICE=1000
+#export EXECUTOR_MAX_L3_GAS_PRICE=10
 export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false
 
 read -p "Enter your Private Key from Metamask: " PRIVATE_KEY_LOCAL
