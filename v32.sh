@@ -52,5 +52,6 @@ export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,blast-sepolia,optimism-se
 
 sleep 2
 echo "Starting the Executor..."
-./executor
-rm -rf t3rn.sh
+cd
+chmod +x run_executor.sh
+./run_executor.sh
