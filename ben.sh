@@ -48,7 +48,7 @@ export RPC_ENDPOINTS_ARBT="https://arb-sepolia.g.alchemy.com/v2/$KEYALCHEMY"
 export RPC_ENDPOINTS_BSSP="https://base-sepolia.g.alchemy.com/v2/$KEYALCHEMY"
 export RPC_ENDPOINTS_BLSS="https://blast-sepolia.g.alchemy.com/v2/$KEYALCHEMY"
 export RPC_ENDPOINTS_OPSP="https://opt-sepolia.g.alchemy.com/v2/$KEYALCHEMY"
-export RPC_ENDPOINTS_L1RN='https://brn.rpc.caldera.xyz/http'
+export RPC_ENDPOINTS_L1RN='https://brn.rpc.caldera.com/http'
 
 
 sleep 2
