@@ -25,15 +25,18 @@ export NODE_ENV=testnet
 export LOG_LEVEL=debug
 export LOG_PRETTY=false
 
-read -p "Executor Process Bid (input true atau false): " KEY_TRUE
-export EXECUTOR_PROCESS_BIDS_ENABLED=$KEY_TRUE
-
-read -p "Executor Process Order (input true atau false): " KEY_TRUE_FALSE
-export EXECUTOR_PROCESS_ORDERS_ENABLED=$KEY_TRUE_FALSE
+If u want your Executor got Ratio 10:1 
+Failde to Win 
+Use this Configuration
+export EXECUTOR_ENABLE_BATCH_BIDING=false
+export EXECUTOR_PROCESS_BIDS_ENABLED=false
+export EXECUTOR_PROCESS_ORDERS_ENABLED=true
 export EXECUTOR_PROCESS_CLAIMS_ENABLED=true
+export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false
+export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false
 
 export EXECUTOR_MAX_L3_GAS_PRICE=1000
-export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false
+
 
 read -p "Enter your Private Key from Metamask: " PRIVATE_KEY_LOCAL
 export PRIVATE_KEY_LOCAL=$PRIVATE_KEY_LOCAL
