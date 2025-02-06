@@ -25,11 +25,7 @@ export NODE_ENV=testnet
 export LOG_LEVEL=debug
 export LOG_PRETTY=false
 
-If u want your Executor got Ratio 10:1 
-Failde to Win 
-Use this Configuration
-export EXECUTOR_ENABLE_BATCH_BIDING=false
-export EXECUTOR_PROCESS_BIDS_ENABLED=false
+export EXECUTOR_PROCESS_BIDS_ENABLED=true
 export EXECUTOR_PROCESS_ORDERS_ENABLED=true
 export EXECUTOR_PROCESS_CLAIMS_ENABLED=true
 export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false
