@@ -20,7 +20,7 @@ tar -xzvf executor-linux-${LATEST_VERSION}.tar.gz
 rm -rf executor-linux-${LATEST_VERSION}.tar.gz
 cd executor/executor/bin
 
-export NODE_ENV=testnet
+export ENVIRONMENT=testnet
 
 export LOG_LEVEL=debug
 export LOG_PRETTY=false
@@ -29,7 +29,7 @@ export EXECUTOR_PROCESS_BIDS_ENABLED=true
 export EXECUTOR_PROCESS_ORDERS_ENABLED=true
 export EXECUTOR_PROCESS_CLAIMS_ENABLED=true
 export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false
-export EXECUTOR_MAX_L3_GAS_PRICE=1000
+export EXECUTOR_MAX_L3_GAS_PRICE=500
 
 
 read -p "Enter your Private Key from Metamask: " PRIVATE_KEY_LOCAL
@@ -37,15 +37,9 @@ export PRIVATE_KEY_LOCAL=$PRIVATE_KEY_LOCAL
 echo -e "\nPrivate key has been set."
 echo
 
-export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,blast-sepolia,optimism-sepolia,l1rn'
+export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,optimism-sepolia,l2rn'
 
-read -p "KEY ALCHEMY: " KEYALCHEMY
 
-export RPC_ENDPOINTS_ARBT="https://arb-sepolia.g.alchemy.com/v2/$KEYALCHEMY"
-export RPC_ENDPOINTS_BSSP="https://base-sepolia.g.alchemy.com/v2/$KEYALCHEMY"
-export RPC_ENDPOINTS_BLSS="https://blast-sepolia.g.alchemy.com/v2/$KEYALCHEMY"
-export RPC_ENDPOINTS_OPSP="https://opt-sepolia.g.alchemy.com/v2/$KEYALCHEMY"
-export RPC_ENDPOINTS_L1RN='https://brn.rpc.caldera.xyz/'
 
 
 sleep 2
