@@ -39,7 +39,7 @@ echo
 
 export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,optimism-sepolia,unichain-sepolia,l2rn'
 
-read -p "KEY INFURA: " KEYALCHEMY
+read -p "ALCHEMY: " KEYALCHEMY
 export RPC_ENDPOINTS='{
     "l2rn": ["https://b2n.rpc.caldera.xyz/http"],
     "arbt": ["https://arb-sepolia.g.alchemy.com/v2/$KEYALCHEMY", "https://sepolia-rollup.arbitrum.io/rpc"],
