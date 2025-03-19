@@ -39,12 +39,13 @@ echo
 
 export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,optimism-sepolia,unichain-sepolia,l2rn'
 
-read -p "ALCHEMY: " KEYALCHEMY
-export RPC_ENDPOINTS_l2rn="https://b2n.rpc.caldera.xyz/http"
-export RPC_ENDPOINTS_ARBT="https://arb-sepolia.g.alchemy.com/v2/$KEYALCHEMY"
-export RPC_ENDPOINTS_BSSP="https://base-sepolia.g.alchemy.com/v2/$KEYALCHEMY"
-export RPC_ENDPOINTS_UNIT="https://unichain-sepolia.g.alchemy.com/v2/$KEYALCHEMY"
-export RPC_ENDPOINTS_OPSP="https://opt-sepolia.g.alchemy.com/v2/$KEYALCHEMY"
+export RPC_ENDPOINTS='{
+    "l2rn": ["https://b2n.rpc.caldera.xyz/http"],
+    "arbt": ["https://arb-sepolia.g.alchemy.com/v2/ENbGXkYLJiar_TsE64hEeMBO0fqckPfW", "https://arbitrum-sepolia.drpc.org"],
+    "bast": ["https://base-sepolia.g.alchemy.com/v2/ENbGXkYLJiar_TsE64hEeMBO0fqckPfW", "https://base-sepolia-rpc.publicnode.com"],
+    "opst": ["https://opt-sepolia.g.alchemy.com/v2/ENbGXkYLJiar_TsE64hEeMBO0fqckPfW", "https://sepolia.optimism.io"],
+    "unit": ["https://unichain-sepolia.g.alchemy.com/v2/ENbGXkYLJiar_TsE64hEeMBO0fqckPfW", "https://unichain-sepolia.drpc.org"]
+}'
 
 sleep 2
 echo "Starting the Executor..."
