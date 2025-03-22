@@ -39,13 +39,6 @@ echo
 
 export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,optimism-sepolia,unichain-sepolia,l2rn'
 
-export RPC_ENDPOINTS='{
-    "l2rn": ["https://b2n.rpc.caldera.xyz/http"],
-    "arbt": ["https://arb-sepolia.g.alchemy.com/v2/RPEj84Df2uWrfUCVWQl38rpnCkfFx0zq", "https://arbitrum-sepolia.drpc.org"],
-    "bast": ["https://base-sepolia.g.alchemy.com/v2/RPEj84Df2uWrfUCVWQl38rpnCkfFx0zq", "https://base-sepolia-rpc.publicnode.com"],
-    "opst": ["https://opt-sepolia.g.alchemy.com/v2/RPEj84Df2uWrfUCVWQl38rpnCkfFx0zq", "https://sepolia.optimism.io"],
-    "unit": ["https://unichain-sepolia.g.alchemy.com/v2/RPEj84Df2uWrfUCVWQl38rpnCkfFx0zq", "https://unichain-sepolia.drpc.org"]
-}'
 
 sleep 2
 echo "Starting the Executor..."
