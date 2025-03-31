@@ -48,10 +48,10 @@ echo
 export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,optimism-sepolia,unichain-sepolia,l2rn'
 export RPC_ENDPOINTS='{
     "l2rn": ["https://b2n.rpc.caldera.xyz/http"],
-    "arbt": ["https://arb-sepolia.g.alchemy.com/v2/EpoHD4vD3xnc219f7R-5ukj4ZXFbvGY-", "https://arbitrum-sepolia.drpc.org"],
-    "bast": ["https://base-sepolia.g.alchemy.com/v2/EpoHD4vD3xnc219f7R-5ukj4ZXFbvGY-", "https://base-sepolia-rpc.publicnode.com"],
-    "opst": ["https://opt-sepolia.g.alchemy.com/v2/EpoHD4vD3xnc219f7R-5ukj4ZXFbvGY-", "https://sepolia.optimism.io"],
-    "unit": ["https://unichain-sepolia.g.alchemy.com/v2/EpoHD4vD3xnc219f7R-5ukj4ZXFbvGY-", "https://unichain-sepolia.drpc.org"]
+    "arbt": ["https://arb-sepolia.g.alchemy.com/v2/oMqVYvy9tmns16Y6ACiNv1v-MI3NvkEP", "https://arbitrum-sepolia.drpc.org"],
+    "bast": ["https://base-sepolia.g.alchemy.com/v2/oMqVYvy9tmns16Y6ACiNv1v-MI3NvkEP", "https://base-sepolia-rpc.publicnode.com"],
+    "opst": ["https://opt-sepolia.g.alchemy.com/v2/oMqVYvy9tmns16Y6ACiNv1v-MI3NvkEP", "https://sepolia.optimism.io"],
+    "unit": ["https://unichain-sepolia.g.alchemy.com/v2/oMqVYvy9tmns16Y6ACiNv1v-MI3NvkEP", "https://unichain-sepolia.drpc.org"]
 }'
 
 
