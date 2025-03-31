@@ -40,14 +40,7 @@ echo
 export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,optimism-sepolia,blast-sepolia,unichain-sepolia,l2rn'
 
 read -p "KEY ALCHEMY: " KEYALCHEMY
-export RPC_ENDPOINTS='{
-    "l2rn": ["https://b2n.rpc.caldera.xyz/http"],
-    "arbt": ["https://arb-sepolia.g.alchemy.com/v2/$KEYALCHEMY", "https://arbitrum-sepolia.drpc.org"],
-    "bast": ["https://base-sepolia.g.alchemy.com/v2/$KEYALCHEMY", "https://base-sepolia-rpc.publicnode.com"],
-    "blst": ["https://blast-sepolia.g.alchemy.com/v2/$KEYALCHEMY", "https://blast-sepolia.drpc.org"],
-    "opst": ["https://opt-sepolia.g.alchemy.com/v2/$KEYALCHEMY", "https://sepolia.optimism.io"],
-    "unit": ["https://unichain-sepolia.g.alchemy.com/v2/$KEYALCHEMY", "https://unichain-sepolia.drpc.org"]
-}'
+export RPC_ENDPOINTS='$KEYALCHEMY
 
 sleep 2
 echo "Starting the Executor..."
