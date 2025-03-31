@@ -12,12 +12,20 @@ sudo apt upgrade
 sudo apt-get install figlet
 figlet -f /usr/share/figlet/starwars.flf
 
-LATEST_VERSION=$(curl -s https://api.github.com/repos/t3rn/executor-release/releases/latest | grep 'tag_name' | cut -d\" -f4)
-EXECUTOR_URL="https://github.com/t3rn/executor-release/releases/download/${LATEST_VERSION}/executor-linux-${LATEST_VERSION}.tar.gz"
-curl -L -o executor-linux-${LATEST_VERSION}.tar.gz $EXECUTOR_URL
+EXECUTOR_URL="https://github.com/t3rn/executor-release/releases/download/v0.59.0/executor-linux-v0.59.0.tar.gz"
+EXECUTOR_FILE="executor-linux-v0.59.0.tar.gz"
 
-tar -xzvf executor-linux-${LATEST_VERSION}.tar.gz
-rm -rf executor-linux-${LATEST_VERSION}.tar.gz
+echo "Downloading the Executor binary from $EXECUTOR_URL..."
+curl -L -o $EXECUTOR_FILE $EXECUTOR_URL
+
+if [ $? -ne 0 ]; then
+    echo "Failed to download the Executor binary. Please check your internet connection and try again."
+    exit 1
+fi
+
+echo "Extracting the binary..."
+tar -xzvf $EXECUTOR_FILE
+rm -rf $EXECUTOR_FILE
 cd executor/executor/bin
 
 export ENVIRONMENT=testnet
