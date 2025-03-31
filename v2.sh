@@ -28,7 +28,7 @@ export LOG_PRETTY=false
 export EXECUTOR_PROCESS_BIDS_ENABLED=true
 export EXECUTOR_PROCESS_ORDERS_ENABLED=true
 export EXECUTOR_PROCESS_CLAIMS_ENABLED=true
-export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false
+#export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false
 export EXECUTOR_MAX_L3_GAS_PRICE=500
 
 
@@ -37,7 +37,7 @@ export PRIVATE_KEY_LOCAL=$PRIVATE_KEY_LOCAL
 echo -e "\nPrivate key has been set."
 echo
 
-export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,optimism-sepolia,blast-sepolia,unichain-sepolia,l2rn'
+export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,blast-sepolia,optimism-sepolia,unichain-sepolia,l2rn'
 
 export RPC_ENDPOINTS='{
     "l2rn": ["https://b2n.rpc.caldera.xyz/http"],
