@@ -38,7 +38,7 @@ echo -e "\nPrivate key has been set."
 echo
 
 export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,optimism-sepolia,unichain-sepolia,l2rn'
-export NETWORKS_DISABLED='blast-sepolia'
+export RPC_ENDPOINTS_BLSS="https://blast-sepolia.g.alchemy.com/v2/coz-lZx9TfrAGLwDkCVTYCntqcW9ptDz"
 
 
 sleep 2
