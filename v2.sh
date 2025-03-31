@@ -40,7 +40,7 @@ echo
 export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,optimism-sepolia,blast-sepolia,unichain-sepolia,l2rn'
 
 read -p "KEY ALCHEMY: " KEYALCHEMY
-export RPC_ENDPOINTS='$KEYALCHEMY
+export RPC_ENDPOINTS=$KEYALCHEMY
 
 sleep 2
 echo "Starting the Executor..."
