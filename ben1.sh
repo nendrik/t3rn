@@ -42,7 +42,7 @@ export RPC_ENDPOINTS='{
     "l2rn": ["https://b2n.rpc.caldera.xyz/http"],
     "arbt": ["https://arb-sepolia.g.alchemy.com/v2/nAG4R8CMO79c4v4AikTDLePkdkYOJZlE", "https://arbitrum-sepolia.drpc.org"],
     "bast": ["https://base-sepolia.g.alchemy.com/v2/nAG4R8CMO79c4v4AikTDLePkdkYOJZlE", "https://base-sepolia-rpc.publicnode.com"],
-    "blst": ["https://sepolia.blast.io", "https://blast-sepolia.drpc.org"],
+    "blst": ["https://blast-sepolia.g.alchemy.com/v2/nAG4R8CMO79c4v4AikTDLePkdkYOJZlE"],
     "opst": ["https://opt-sepolia.g.alchemy.com/v2/nAG4R8CMO79c4v4AikTDLePkdkYOJZlE", "https://sepolia.optimism.io"],
     "unit": ["https://unichain-sepolia.g.alchemy.com/v2/nAG4R8CMO79c4v4AikTDLePkdkYOJZlE", "https://unichain-sepolia.drpc.org"]
 }'
