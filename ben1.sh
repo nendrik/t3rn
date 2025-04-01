@@ -12,20 +12,12 @@ sudo apt upgrade
 sudo apt-get install figlet
 figlet -f /usr/share/figlet/starwars.flf
 
-EXECUTOR_URL="https://github.com/t3rn/executor-release/releases/download/v0.59.0/executor-linux-v0.59.0.tar.gz"
-EXECUTOR_FILE="executor-linux-v0.59.0.tar.gz"
+LATEST_VERSION=$(curl -s https://api.github.com/repos/t3rn/executor-release/releases/latest | grep 'tag_name' | cut -d\" -f4)
+EXECUTOR_URL="https://github.com/t3rn/executor-release/releases/download/${LATEST_VERSION}/executor-linux-${LATEST_VERSION}.tar.gz"
+curl -L -o executor-linux-${LATEST_VERSION}.tar.gz $EXECUTOR_URL
 
-echo "Downloading the Executor binary from $EXECUTOR_URL..."
-curl -L -o $EXECUTOR_FILE $EXECUTOR_URL
-
-if [ $? -ne 0 ]; then
-    echo "Failed to download the Executor binary. Please check your internet connection and try again."
-    exit 1
-fi
-
-echo "Extracting the binary..."
-tar -xzvf $EXECUTOR_FILE
-rm -rf $EXECUTOR_FILE
+tar -xzvf executor-linux-${LATEST_VERSION}.tar.gz
+rm -rf executor-linux-${LATEST_VERSION}.tar.gz
 cd executor/executor/bin
 
 export ENVIRONMENT=testnet
@@ -50,6 +42,7 @@ export RPC_ENDPOINTS='{
     "l2rn": ["https://b2n.rpc.caldera.xyz/http"],
     "arbt": ["https://arb-sepolia.g.alchemy.com/v2/nAG4R8CMO79c4v4AikTDLePkdkYOJZlE", "https://arbitrum-sepolia.drpc.org"],
     "bast": ["https://base-sepolia.g.alchemy.com/v2/nAG4R8CMO79c4v4AikTDLePkdkYOJZlE", "https://base-sepolia-rpc.publicnode.com"],
+    "blst": ["https://sepolia.blast.io", "https://blast-sepolia.drpc.org"],
     "opst": ["https://opt-sepolia.g.alchemy.com/v2/nAG4R8CMO79c4v4AikTDLePkdkYOJZlE", "https://sepolia.optimism.io"],
     "unit": ["https://unichain-sepolia.g.alchemy.com/v2/nAG4R8CMO79c4v4AikTDLePkdkYOJZlE", "https://unichain-sepolia.drpc.org"]
 }'
