@@ -38,6 +38,14 @@ echo -e "\nPrivate key has been set."
 echo
 
 export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,optimism-sepolia,unichain-sepolia,l2rn'
+export RPC_ENDPOINTS='{
+    "l2rn": ["https://b2n.rpc.caldera.xyz/http"],
+    "arbt": ["https://arb-sepolia.g.alchemy.com/v2/k3O9j5MlJlEpshaP62oVVsEHDe4p0VdJ", "https://arbitrum-sepolia.drpc.org"],
+    "bast": ["https://base-sepolia.g.alchemy.com/v2/k3O9j5MlJlEpshaP62oVVsEHDe4p0VdJ", "https://base-sepolia-rpc.publicnode.com"],
+    "blst": ["https://blast-sepolia.g.alchemy.com/v2/k3O9j5MlJlEpshaP62oVVsEHDe4p0VdJ", "https://blast-sepolia.drpc.org"],
+    "opst": ["https://opt-sepolia.g.alchemy.com/v2/k3O9j5MlJlEpshaP62oVVsEHDe4p0VdJ", "https://sepolia.optimism.io"],
+    "unit": ["https://unichain-sepolia.g.alchemy.com/v2/k3O9j5MlJlEpshaP62oVVsEHDe4p0VdJ", "https://unichain-sepolia.drpc.org"]
+}'
 
 
 sleep 2
