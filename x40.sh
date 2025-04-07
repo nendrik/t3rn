@@ -28,7 +28,7 @@ export LOG_PRETTY=false
 export EXECUTOR_PROCESS_BIDS_ENABLED=true
 export EXECUTOR_PROCESS_ORDERS_ENABLED=true
 export EXECUTOR_PROCESS_CLAIMS_ENABLED=true
-#export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false
+export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false
 export EXECUTOR_MAX_L3_GAS_PRICE=500
 
 
@@ -40,11 +40,11 @@ echo
 export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,optimism-sepolia,unichain-sepolia,l2rn'
 export RPC_ENDPOINTS='{
     "l2rn": ["https://t3rn-b2n.blockpi.network/v1/rpc/6ebe45636e66988e72b108d274bb9eea02132a0c", "https://b2n.rpc.caldera.xyz/http"],
-    "arbt": ["https://arb-sepolia.g.alchemy.com/v2/RPEj84Df2uWrfUCVWQl38rpnCkfFx0zq", "https://arbitrum-sepolia.drpc.org"],
-    "bast": ["https://base-sepolia.g.alchemy.com/v2/RPEj84Df2uWrfUCVWQl38rpnCkfFx0zq", "https://base-sepolia-rpc.publicnode.com"],
+    "arbt": ["https://arb-sepolia.g.alchemy.com/v2/RPEj84Df2uWrfUCVWQl38rpnCkfFx0zq", "https://arbitrum-sepolia.blockpi.network/v1/rpc/c66cb464a75cec64f81d0582f0d148515603b3d5"],
+    "bast": ["https://base-sepolia.g.alchemy.com/v2/RPEj84Df2uWrfUCVWQl38rpnCkfFx0zq", "https://base-sepolia.blockpi.network/v1/rpc/6b8ab7c3bb7f66cdc5c0c765e2d28e452ff56ba6", "https://base-sepolia-rpc.publicnode.com"],
     "blst": ["https://blast-sepolia.g.alchemy.com/v2/RPEj84Df2uWrfUCVWQl38rpnCkfFx0zq"],
-    "opst": ["https://opt-sepolia.g.alchemy.com/v2/RPEj84Df2uWrfUCVWQl38rpnCkfFx0zq", "https://sepolia.optimism.io"],
-    "unit": ["https://unichain-sepolia.g.alchemy.com/v2/RPEj84Df2uWrfUCVWQl38rpnCkfFx0zq", "https://unichain-sepolia.drpc.org"]
+    "opst": ["https://opt-sepolia.g.alchemy.com/v2/RPEj84Df2uWrfUCVWQl38rpnCkfFx0zq", "https://optimism.blockpi.network/v1/rpc/f98879416bf69e9315e2bdaa173d2ea1b0ab6172", "https://sepolia.optimism.io"],
+    "unit": ["https://unichain-sepolia.g.alchemy.com/v2/RPEj84Df2uWrfUCVWQl38rpnCkfFx0zq", "https://unichain-sepolia.blockpi.network/v1/rpc/5544919964fd08c2f0e4eede0b43247b72bb3c93", "https://unichain-sepolia.drpc.org"]
 }'
 
 
