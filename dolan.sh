@@ -28,7 +28,7 @@ export LOG_PRETTY=false
 export EXECUTOR_PROCESS_BIDS_ENABLED=true
 export EXECUTOR_PROCESS_ORDERS_ENABLED=true
 export EXECUTOR_PROCESS_CLAIMS_ENABLED=true
-#export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false
+export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false
 export EXECUTOR_MAX_L3_GAS_PRICE=500
 
 
@@ -39,12 +39,12 @@ echo
 
 export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,optimism-sepolia,unichain-sepolia,l2rn'
 export RPC_ENDPOINTS='{
-    "l2rn": ["https://b2n.rpc.caldera.xyz/http"],
-    "arbt": ["https://arb-sepolia.g.alchemy.com/v2/k3O9j5MlJlEpshaP62oVVsEHDe4p0VdJ", "https://arbitrum-sepolia.drpc.org"],
-    "bast": ["https://base-sepolia.g.alchemy.com/v2/k3O9j5MlJlEpshaP62oVVsEHDe4p0VdJ", "https://base-sepolia-rpc.publicnode.com"],
+    "l2rn": ["https://t3rn-b2n.blockpi.network/v1/rpc/dc7dfccd915630ebccefba5f83ced78718ea152f", "https://t3rn-b2n.blockpi.network/v1/rpc/public", "https://b2n.rpc.caldera.xyz/http"],
+    "arbt": ["https://arb-sepolia.g.alchemy.com/v2/k3O9j5MlJlEpshaP62oVVsEHDe4p0VdJ", "https://arbitrum-sepolia.blockpi.network/v1/rpc/98fcfdf7d9f660b41b78e4030ce09f5e3516af24"],
+    "bast": ["https://base-sepolia.g.alchemy.com/v2/k3O9j5MlJlEpshaP62oVVsEHDe4p0VdJ", "https://base-sepolia.blockpi.network/v1/rpc/b12946c35539fb4f9d3f059ce9323c25ec22cffc", "https://base-sepolia-rpc.publicnode.com"],
     "blst": ["https://blast-sepolia.g.alchemy.com/v2/k3O9j5MlJlEpshaP62oVVsEHDe4p0VdJ", "https://blast-sepolia.drpc.org"],
-    "opst": ["https://opt-sepolia.g.alchemy.com/v2/k3O9j5MlJlEpshaP62oVVsEHDe4p0VdJ", "https://sepolia.optimism.io"],
-    "unit": ["https://unichain-sepolia.g.alchemy.com/v2/k3O9j5MlJlEpshaP62oVVsEHDe4p0VdJ", "https://unichain-sepolia.drpc.org"]
+    "opst": ["https://opt-sepolia.g.alchemy.com/v2/k3O9j5MlJlEpshaP62oVVsEHDe4p0VdJ", "https://optimism-sepolia.blockpi.network/v1/rpc/5e6bf79a6d6921d3f4d08ea893f877a21025852f", "https://sepolia.optimism.io"],
+    "unit": ["https://unichain-sepolia.g.alchemy.com/v2/k3O9j5MlJlEpshaP62oVVsEHDe4p0VdJ", "https://unichain-sepolia.blockpi.network/v1/rpc/162f1864a9e987e9110322ca580cbcc503361d1f"]
 }'
 
 
