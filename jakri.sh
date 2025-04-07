@@ -28,7 +28,7 @@ export LOG_PRETTY=false
 export EXECUTOR_PROCESS_BIDS_ENABLED=true
 export EXECUTOR_PROCESS_ORDERS_ENABLED=true
 export EXECUTOR_PROCESS_CLAIMS_ENABLED=true
-#export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false
+export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false
 export EXECUTOR_MAX_L3_GAS_PRICE=500
 
 
@@ -39,12 +39,12 @@ echo
 
 export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,optimism-sepolia,unichain-sepolia,l2rn'
 export RPC_ENDPOINTS='{
-    "l2rn": ["https://b2n.rpc.caldera.xyz/http"],
-    "arbt": ["https://arb-sepolia.g.alchemy.com/v2/oMqVYvy9tmns16Y6ACiNv1v-MI3NvkEP", "https://arbitrum-sepolia.drpc.org"],
-    "bast": ["https://base-sepolia.g.alchemy.com/v2/oMqVYvy9tmns16Y6ACiNv1v-MI3NvkEP", "https://base-sepolia-rpc.publicnode.com"],
+    "l2rn": ["https://t3rn-b2n.blockpi.network/v1/rpc/b487f56f065dda08b0b8f9f71f616bf528e8c657", "https://t3rn-b2n.blockpi.network/v1/rpc/public", "https://b2n.rpc.caldera.xyz/http"],
+    "arbt": ["https://arb-sepolia.g.alchemy.com/v2/oMqVYvy9tmns16Y6ACiNv1v-MI3NvkEP", "https://arbitrum-sepolia.blockpi.network/v1/rpc/4c6a6b31e9fa2b4538a3b4837e318b8ee34ca340"],
+    "bast": ["https://base-sepolia.g.alchemy.com/v2/oMqVYvy9tmns16Y6ACiNv1v-MI3NvkEP", "https://base-sepolia.blockpi.network/v1/rpc/cb149a7cae472b2963a3a73113a1223a68e53a84", "https://base-sepolia-rpc.publicnode.com"],
     "blst": ["https://blast-sepolia.g.alchemy.com/v2/oMqVYvy9tmns16Y6ACiNv1v-MI3NvkEP"],
-    "opst": ["https://opt-sepolia.g.alchemy.com/v2/oMqVYvy9tmns16Y6ACiNv1v-MI3NvkEP", "https://sepolia.optimism.io"],
-    "unit": ["https://unichain-sepolia.g.alchemy.com/v2/oMqVYvy9tmns16Y6ACiNv1v-MI3NvkEP", "https://unichain-sepolia.drpc.org"]
+    "opst": ["https://opt-sepolia.g.alchemy.com/v2/oMqVYvy9tmns16Y6ACiNv1v-MI3NvkEP", "https://optimism-sepolia.blockpi.network/v1/rpc/e8ff3562c69e699fdd0894098af349baa01e1600", "https://sepolia.optimism.io"],
+    "unit": ["https://unichain-sepolia.g.alchemy.com/v2/oMqVYvy9tmns16Y6ACiNv1v-MI3NvkEP", "https://unichain-sepolia.blockpi.network/v1/rpc/a84aee1fa776ccf98b8e29a7d175cbfcd49140f8"]
 }'
 
 
