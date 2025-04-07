@@ -28,7 +28,7 @@ export LOG_PRETTY=false
 export EXECUTOR_PROCESS_BIDS_ENABLED=true
 export EXECUTOR_PROCESS_ORDERS_ENABLED=true
 export EXECUTOR_PROCESS_CLAIMS_ENABLED=true
-#export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false
+export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false
 export EXECUTOR_MAX_L3_GAS_PRICE=500
 
 
@@ -39,12 +39,12 @@ echo
 
 export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,optimism-sepolia,unichain-sepolia,l2rn'
 export RPC_ENDPOINTS='{
-    "l2rn": ["https://b2n.rpc.caldera.xyz/http"],
-    "arbt": ["https://arb-sepolia.g.alchemy.com/v2/uDorUCFfkmofzS7jXmJ1yRfgKyeR8scM", "https://arbitrum-sepolia.drpc.org"],
-    "bast": ["https://base-sepolia.g.alchemy.com/v2/uDorUCFfkmofzS7jXmJ1yRfgKyeR8scM", "https://base-sepolia-rpc.publicnode.com"],
+    "l2rn": ["https://t3rn-b2n.blockpi.network/v1/rpc/eb1ef22612b42cd826ffd6f259b5e092f5f61b2c", "https://t3rn-b2n.blockpi.network/v1/rpc/public", "https://b2n.rpc.caldera.xyz/http"],
+    "arbt": ["https://arb-sepolia.g.alchemy.com/v2/uDorUCFfkmofzS7jXmJ1yRfgKyeR8scM", "https://arbitrum-sepolia.blockpi.network/v1/rpc/250bf894c2b15a0b655fae61931809b4c897d117"],
+    "bast": ["https://base-sepolia.g.alchemy.com/v2/uDorUCFfkmofzS7jXmJ1yRfgKyeR8scM", "https://base-sepolia.blockpi.network/v1/rpc/694203f1eb8779355e589a359c2fa08cf3be9084",  "https://base-sepolia-rpc.publicnode.com"],
     "blst": ["https://blast-sepolia.g.alchemy.com/v2/uDorUCFfkmofzS7jXmJ1yRfgKyeR8scM"],
-    "opst": ["https://opt-sepolia.g.alchemy.com/v2/uDorUCFfkmofzS7jXmJ1yRfgKyeR8scM", "https://sepolia.optimism.io"],
-    "unit": ["https://unichain-sepolia.g.alchemy.com/v2/uDorUCFfkmofzS7jXmJ1yRfgKyeR8scM", "https://unichain-sepolia.drpc.org"]
+    "opst": ["https://opt-sepolia.g.alchemy.com/v2/uDorUCFfkmofzS7jXmJ1yRfgKyeR8scM", "https://optimism-sepolia.blockpi.network/v1/rpc/5d308628092ac2cb18712f5490e1c27f5b9f8ca2", "https://sepolia.optimism.io"],
+    "unit": ["https://unichain-sepolia.g.alchemy.com/v2/uDorUCFfkmofzS7jXmJ1yRfgKyeR8scM", "https://unichain-sepolia.blockpi.network/v1/rpc/41d811b924f62904d8b5769625e71849e5883af4"]
 }'
 
 
