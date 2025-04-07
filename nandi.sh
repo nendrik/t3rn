@@ -28,7 +28,7 @@ export LOG_PRETTY=false
 export EXECUTOR_PROCESS_BIDS_ENABLED=true
 export EXECUTOR_PROCESS_ORDERS_ENABLED=true
 export EXECUTOR_PROCESS_CLAIMS_ENABLED=true
-#export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false
+export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false
 export EXECUTOR_MAX_L3_GAS_PRICE=500
 
 
@@ -39,12 +39,12 @@ echo
 
 export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,optimism-sepolia,unichain-sepolia,l2rn'
 export RPC_ENDPOINTS='{
-    "l2rn": ["https://b2n.rpc.caldera.xyz/http"],
-    "arbt": ["https://arb-sepolia.g.alchemy.com/v2/8Bl5YcN5DvcOssRsmeV4AGY83QViYJyS", "https://arbitrum-sepolia.drpc.org"],
-    "bast": ["https://base-sepolia.g.alchemy.com/v2/8Bl5YcN5DvcOssRsmeV4AGY83QViYJyS", "https://base-sepolia-rpc.publicnode.com"],
+    "l2rn": ["https://t3rn-b2n.blockpi.network/v1/rpc/48418102037d6a70097a3052f861b84dfc114c54", "https://b2n.rpc.caldera.xyz/http"],
+    "arbt": ["https://arb-sepolia.g.alchemy.com/v2/8Bl5YcN5DvcOssRsmeV4AGY83QViYJyS", "https://arbitrum-sepolia.blockpi.network/v1/rpc/29979313a97c08bba6589dccab45f2e32ef5e62c"],
+    "bast": ["https://base-sepolia.g.alchemy.com/v2/8Bl5YcN5DvcOssRsmeV4AGY83QViYJyS", "https://base-sepolia.blockpi.network/v1/rpc/049ce2b116f1249bc9cd487be20ec8fc8aa81afc", "https://base-sepolia-rpc.publicnode.com"],
     "blst": ["https://blast-sepolia.g.alchemy.com/v2/8Bl5YcN5DvcOssRsmeV4AGY83QViYJyS"],
-    "opst": ["https://opt-sepolia.g.alchemy.com/v2/8Bl5YcN5DvcOssRsmeV4AGY83QViYJyS", "https://sepolia.optimism.io"],
-    "unit": ["https://unichain-sepolia.g.alchemy.com/v2/8Bl5YcN5DvcOssRsmeV4AGY83QViYJyS", "https://unichain-sepolia.drpc.org"]
+    "opst": ["https://opt-sepolia.g.alchemy.com/v2/8Bl5YcN5DvcOssRsmeV4AGY83QViYJyS", "https://optimism-sepolia.blockpi.network/v1/rpc/9289481d671382e89d04bec75bebf7db79860d3e", "https://sepolia.optimism.io"],
+    "unit": ["https://unichain-sepolia.g.alchemy.com/v2/8Bl5YcN5DvcOssRsmeV4AGY83QViYJyS", "https://unichain-sepolia.blockpi.network/v1/rpc/6694db35b01fc3dd877973c7dc33773b8715964a"]
 }'
 
 
