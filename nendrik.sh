@@ -28,7 +28,7 @@ export LOG_PRETTY=false
 export EXECUTOR_PROCESS_BIDS_ENABLED=true
 export EXECUTOR_PROCESS_ORDERS_ENABLED=true
 export EXECUTOR_PROCESS_CLAIMS_ENABLED=true
-#export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false
+export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false
 export EXECUTOR_MAX_L3_GAS_PRICE=500
 
 
@@ -39,12 +39,12 @@ echo
 
 export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,optimism-sepolia,unichain-sepolia,l2rn'
 export RPC_ENDPOINTS='{
-    "l2rn": ["https://b2n.rpc.caldera.xyz/http"],
-    "arbt": ["https://arb-sepolia.g.alchemy.com/v2/b8zHxE1oiyEBVsgdyZxN7tDLwC04Dc06", "https://arbitrum-sepolia.drpc.org"],
-    "bast": ["https://base-sepolia.g.alchemy.com/v2/b8zHxE1oiyEBVsgdyZxN7tDLwC04Dc06", "https://base-sepolia-rpc.publicnode.com"],
+    "l2rn": ["https://t3rn-b2n.blockpi.network/v1/rpc/e73fd7754e5ea2363f960dc44b797afaeeebb95c" ,"https://b2n.rpc.caldera.xyz/http"],
+    "arbt": ["https://arb-sepolia.g.alchemy.com/v2/b8zHxE1oiyEBVsgdyZxN7tDLwC04Dc06", "https://arbitrum-sepolia.blockpi.network/v1/rpc/31334888fe891a16f95ca7bbd30c6cdced94408c"],
+    "bast": ["https://base-sepolia.g.alchemy.com/v2/b8zHxE1oiyEBVsgdyZxN7tDLwC04Dc06", "https://base-sepolia.blockpi.network/v1/rpc/78f41f5f02fb85f090afa97014058925ecaa211d", "https://base-sepolia-rpc.publicnode.com"],
     "blst": ["https://blast-sepolia.g.alchemy.com/v2/b8zHxE1oiyEBVsgdyZxN7tDLwC04Dc06"],
-    "opst": ["https://opt-sepolia.g.alchemy.com/v2/b8zHxE1oiyEBVsgdyZxN7tDLwC04Dc06", "https://sepolia.optimism.io"],
-    "unit": ["https://unichain-sepolia.g.alchemy.com/v2/b8zHxE1oiyEBVsgdyZxN7tDLwC04Dc06", "https://unichain-sepolia.drpc.org"]
+    "opst": ["https://opt-sepolia.g.alchemy.com/v2/b8zHxE1oiyEBVsgdyZxN7tDLwC04Dc06", "https://optimism-sepolia.blockpi.network/v1/rpc/8a89beedc131d1dfd5080d3c3f07ed55537a6880", "https://sepolia.optimism.io"],
+    "unit": ["https://unichain-sepolia.g.alchemy.com/v2/b8zHxE1oiyEBVsgdyZxN7tDLwC04Dc06", "https://unichain-sepolia.blockpi.network/v1/rpc/e94df32c22cae1b518f9edf97430a195989ea88b"]
 }'
 
 
