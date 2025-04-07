@@ -39,7 +39,7 @@ echo
 
 export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,optimism-sepolia,unichain-sepolia,l2rn'
 export RPC_ENDPOINTS='{
-    "l2rn": ["https://b2n.rpc.caldera.xyz/http"],
+    "l2rn": ["https://t3rn-b2n.blockpi.network/v1/rpc/6ebe45636e66988e72b108d274bb9eea02132a0c", "https://b2n.rpc.caldera.xyz/http"],
     "arbt": ["https://arb-sepolia.g.alchemy.com/v2/RPEj84Df2uWrfUCVWQl38rpnCkfFx0zq", "https://arbitrum-sepolia.drpc.org"],
     "bast": ["https://base-sepolia.g.alchemy.com/v2/RPEj84Df2uWrfUCVWQl38rpnCkfFx0zq", "https://base-sepolia-rpc.publicnode.com"],
     "blst": ["https://blast-sepolia.g.alchemy.com/v2/RPEj84Df2uWrfUCVWQl38rpnCkfFx0zq"],
