@@ -43,6 +43,7 @@ export RPC_ENDPOINTS='{
     "arbt": ["https://arb-sepolia.g.alchemy.com/v2/RPEj84Df2uWrfUCVWQl38rpnCkfFx0zq", "https://arbitrum-sepolia.blockpi.network/v1/rpc/c66cb464a75cec64f81d0582f0d148515603b3d5"],
     "bast": ["https://base-sepolia.g.alchemy.com/v2/RPEj84Df2uWrfUCVWQl38rpnCkfFx0zq", "https://base-sepolia.blockpi.network/v1/rpc/6b8ab7c3bb7f66cdc5c0c765e2d28e452ff56ba6", "https://base-sepolia-rpc.publicnode.com"],
     "blst": ["https://blast-sepolia.g.alchemy.com/v2/RPEj84Df2uWrfUCVWQl38rpnCkfFx0zq"],
+    "mont": ["https://testnet-rpc.monad.xyz"],
     "opst": ["https://opt-sepolia.g.alchemy.com/v2/RPEj84Df2uWrfUCVWQl38rpnCkfFx0zq", "https://optimism-sepolia.blockpi.network/v1/rpc/a240fd49d6b73e7975ccc36fdf013272a2fd6e58", "https://sepolia.optimism.io"],
     "unit": ["https://unichain-sepolia.g.alchemy.com/v2/RPEj84Df2uWrfUCVWQl38rpnCkfFx0zq", "https://unichain-sepolia.blockpi.network/v1/rpc/5544919964fd08c2f0e4eede0b43247b72bb3c93", "https://unichain-sepolia.drpc.org"]
 }'
