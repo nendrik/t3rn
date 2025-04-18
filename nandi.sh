@@ -40,7 +40,7 @@ echo
 export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,optimism-sepolia,unichain-sepolia,l2rn'
 export RPC_ENDPOINTS='{
     "l2rn": ["https://t3rn-b2n.blockpi.network/v1/rpc/48418102037d6a70097a3052f861b84dfc114c54", "https://b2n.rpc.caldera.xyz/http"],
-    "arbt": ["https://arb-sepolia.g.alchemy.com/v2/8Bl5YcN5DvcOssRsmeV4AGY83QViYJyS", "https://arbitrum-sepolia.blockpi.network/v1/rpc/29979313a97c08bba6589dccab45f2e32ef5e62c"],
+    "arbt": [ "https://arbitrum-sepolia.blockpi.network/v1/rpc/29979313a97c08bba6589dccab45f2e32ef5e62c", "https://arb-sepolia.g.alchemy.com/v2/8Bl5YcN5DvcOssRsmeV4AGY83QViYJyS"],
     "bast": ["https://base-sepolia.g.alchemy.com/v2/8Bl5YcN5DvcOssRsmeV4AGY83QViYJyS", "https://base-sepolia.blockpi.network/v1/rpc/049ce2b116f1249bc9cd487be20ec8fc8aa81afc", "https://base-sepolia-rpc.publicnode.com"],
     "blst": ["https://blast-sepolia.g.alchemy.com/v2/8Bl5YcN5DvcOssRsmeV4AGY83QViYJyS"],
     "mont": ["https://testnet-rpc.monad.xyz"],
